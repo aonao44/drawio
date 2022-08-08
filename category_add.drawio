@@ -1,0 +1,66 @@
+<mxfile host="65bd71144e">
+    <diagram id="Rtl8VqK5zWMDhsXBDyXH" name="ページ1">
+        <mxGraphModel dx="1138" dy="509" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3" value="&lt;meta charset=&quot;utf-8&quot;&gt;&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(24, 24, 24); font-family: menlo, monaco, &amp;quot;courier new&amp;quot;, monospace; font-weight: normal; font-size: 12px; line-height: 18px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #569cd6&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #4ec9b0&quot;&gt;CategoryPostListView&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt;(ListView):&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt;    model &lt;/span&gt;&lt;span style=&quot;color: #b4b4b4&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt; Post&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt;    template_name &lt;/span&gt;&lt;span style=&quot;color: #b4b4b4&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d69d85&quot;&gt;&quot;naonaoblog/post_list.html&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt;    context_object_name &lt;/span&gt;&lt;span style=&quot;color: #b4b4b4&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d69d85&quot;&gt;'posts'&lt;/span&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #569cd6&quot;&gt;def&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #c8c8c8&quot;&gt;get_queryset&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #7f7f7f&quot;&gt;self&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt;):&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt;        url &lt;/span&gt;&lt;span style=&quot;color: #b4b4b4&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #569cd6&quot;&gt;self&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt;.kwargs[&lt;/span&gt;&lt;span style=&quot;color: #d69d85&quot;&gt;'slug'&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt;]&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt;        print(&lt;/span&gt;&lt;span style=&quot;color: #d69d85&quot;&gt;'url:::'&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt;, url)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt;        &lt;/span&gt;&lt;span style=&quot;color: #569cd6&quot;&gt;self&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt;.category &lt;/span&gt;&lt;span style=&quot;color: #b4b4b4&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt; get_object_or_404(Category, &lt;/span&gt;&lt;span style=&quot;color: #7f7f7f&quot;&gt;slug&lt;/span&gt;&lt;span style=&quot;color: #b4b4b4&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt;url)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt;        print(&lt;/span&gt;&lt;span style=&quot;color: #d69d85&quot;&gt;'selfcategory:'&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color: #569cd6&quot;&gt;self&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt;.category)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt;        &lt;/span&gt;&lt;span style=&quot;color: #569cd6&quot;&gt;return&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt; super().get_queryset().filter(&lt;/span&gt;&lt;span style=&quot;color: #7f7f7f&quot;&gt;category&lt;/span&gt;&lt;span style=&quot;color: #b4b4b4&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #569cd6&quot;&gt;self&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt;.category)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="80" width="460" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="80" width="350" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="絞り込み対象はリストなので、リストのclassをコピー" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="10" width="260" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d80073;strokeColor=#A50040;fontColor=#ffffff;opacity=30;" parent="1" vertex="1">
+                    <mxGeometry y="140" width="280" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="これを忘れると「設定できていいても」&lt;br&gt;何も表示されない" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="294" y="140" width="266" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" style="edgeStyle=none;html=1;" parent="1" source="11" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="148.5" y="320" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="11" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d80073;strokeColor=#A50040;fontColor=#ffffff;opacity=30;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="194" width="277" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="320" width="266" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="python" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="340" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="python" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="400" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="CATEGORY:" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="340" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="URL:" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="400" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="Adminの中の設定&lt;br&gt;category設定" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="294" y="375" width="266" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d80073;strokeColor=#A50040;fontColor=#ffffff;opacity=30;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="385" width="277" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="&lt;meta charset=&quot;utf-8&quot;&gt;&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(24, 24, 24); font-family: menlo, monaco, &amp;quot;courier new&amp;quot;, monospace; font-weight: normal; font-size: 12px; line-height: 18px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt;path(&lt;/span&gt;&lt;span style=&quot;color: #d69d85&quot;&gt;&quot;category/&amp;lt;str:slug&amp;gt;/&quot;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt;, CategoryPostListView.as_view(), &lt;/span&gt;&lt;span style=&quot;color: #7f7f7f&quot;&gt;name&lt;/span&gt;&lt;span style=&quot;color: #b4b4b4&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #d69d85&quot;&gt;&quot;category-post-list&quot;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt;),&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="540" y="40" width="650" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d80073;strokeColor=#A50040;fontColor=#ffffff;opacity=30;" vertex="1" parent="1">
+                    <mxGeometry x="650" y="50" width="90" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="urls.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="520" width="266" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="categoryで登録したものをリストで絞れる&lt;br&gt;「python」と登録したらpythonだけ出てくる" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="540" y="80" width="330" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
